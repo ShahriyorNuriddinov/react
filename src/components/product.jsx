@@ -2,7 +2,7 @@ import React from "react";
 
 const Product = () => {
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-[100px]">
+    <section className="container1 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-[100px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         <div className="text-center lg:text-left">
           <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[70px] leading-tight">

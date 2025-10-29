@@ -2,7 +2,7 @@ import React from "react";
 
 const Grid = () => {
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="container1 sm:px-6 lg:px-8">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-12 lg:mb-16">
         <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[70px] text-dark leading-tight">

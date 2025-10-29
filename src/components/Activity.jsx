@@ -3,7 +3,7 @@ import img from "../assets/img/overview.png";
 
 const Activity = () => {
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16 bg-main flex items-center justify-center">
+    <section className="container1 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16 bg-main flex items-center justify-center">
       <div className="w-full flex justify-center">
         <img
           src={img}
