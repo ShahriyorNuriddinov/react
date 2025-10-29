@@ -1,17 +1,23 @@
 import React from "react";
 
-const grid = () => {
+const Grid = () => {
   return (
-    <section className="container1 ">
-      <h1 className="text-center font-bold text-[70px] text-dark">
-        Choose your flexible plan.
-      </h1>
-      <div className="flex items-center justify-between py-[100px]">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Heading */}
+      <div className="text-center mb-8 md:mb-12 lg:mb-16">
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[70px] text-dark leading-tight">
+          Choose your flexible plan.
+        </h1>
+      </div>
+
+      {/* Pricing Cards */}
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-10 py-8 md:py-12 lg:py-16">
+        {/* Starter Plan */}
         <div
           style={{ boxShadow: "0 0 50px 0 rgba(0,0,0,0.04)" }}
-          className="flex flex-col gap-10 items-start bg-gray-100 rounded-xl p-4"
+          className="flex flex-col gap-6 md:gap-8 lg:gap-10 items-start bg-gray-100 rounded-xl p-6 md:p-8 w-full max-w-sm lg:max-w-xs xl:max-w-sm"
         >
-          <div className="">
+          <div className="flex items-center justify-center w-12 h-12">
             <svg
               width="24"
               height="24"
@@ -25,13 +31,15 @@ const grid = () => {
               />
             </svg>
           </div>
-          <div className="flex flex-col gap-7 items-start">
-            <div className="">
-              <h3 className="font-semibold text-3xl text-dark">Starter Plan</h3>
+          <div className="flex flex-col gap-6 md:gap-7 items-start w-full">
+            <div>
+              <h3 className="font-semibold text-2xl md:text-3xl text-dark">
+                Starter Plan
+              </h3>
             </div>
-            <div className="">
-              <ul>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+            <div className="w-full">
+              <ul className="space-y-3 md:space-y-4">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -43,10 +51,10 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Store unlimited data
                 </li>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -58,10 +66,10 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Export to pdf, xls, csv
                 </li>
-                <li className="flex items-center gap-5 font-normal text-lg text-dark">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -73,35 +81,38 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Cloud server support
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="">
-                <h3 className="font-semibold text-2xl text-dark">
+            <div className="flex flex-col gap-4 w-full">
+              <div>
+                <h3 className="font-semibold text-xl md:text-2xl text-dark">
                   $9.99/
-                  <span className="font-light text-xl text-light">year</span>
-                  <p className="text-xs font-normal text-light">
-                    {" "}
-                    up to 3 user + 1.99 per user
-                  </p>
+                  <span className="font-light text-lg md:text-xl text-light">
+                    year
+                  </span>
                 </h3>
+                <p className="text-xs font-normal text-light mt-1">
+                  up to 3 user + 1.99 per user
+                </p>
               </div>
-              <div className="">
-                <button className="border-solid border-main border rounded-sm py-3 px-5">
+              <div className="w-full">
+                <button className="w-full border-solid border-main border rounded-sm py-3 px-5 hover:bg-main hover:text-white transition duration-200">
                   Get this
                 </button>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Silver Plan */}
         <div
           style={{ boxShadow: "0 0 50px 0 rgba(0,0,0,0.04)" }}
-          className="flex flex-col gap-10 bg-gray-100 rounded-xl items-start p-4"
+          className="flex flex-col gap-6 md:gap-8 lg:gap-10 bg-gray-100 rounded-xl items-start p-6 md:p-8 w-full max-w-sm lg:max-w-xs xl:max-w-sm transform lg:scale-105"
         >
-          <div className="">
+          <div className="flex items-center justify-center w-12 h-12">
             <svg
               width="24"
               height="24"
@@ -115,13 +126,15 @@ const grid = () => {
               />
             </svg>
           </div>
-          <div className="flex flex-col gap-7 items-start">
-            <div className="">
-              <h3 className="font-semibold text-3xl text-dark">Sliver Plan</h3>
+          <div className="flex flex-col gap-6 md:gap-7 items-start w-full">
+            <div>
+              <h3 className="font-semibold text-2xl md:text-3xl text-dark">
+                Silver Plan
+              </h3>
             </div>
-            <div className="">
-              <ul>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+            <div className="w-full">
+              <ul className="space-y-3 md:space-y-4">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -133,10 +146,10 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Store unlimited data
                 </li>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -148,10 +161,10 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Export to pdf, xls, csv
                 </li>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -163,35 +176,38 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Cloud server support
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="">
-                <h3 className="font-semibold text-2xl text-dark">
+            <div className="flex flex-col gap-4 w-full">
+              <div>
+                <h3 className="font-semibold text-xl md:text-2xl text-dark">
                   $19.99/
-                  <span className="font-light text-xl text-light">year</span>
-                  <p className="text-xs font-normal text-light">
-                    {" "}
-                    up to 3 user + 1.99 per user
-                  </p>
+                  <span className="font-light text-lg md:text-xl text-light">
+                    year
+                  </span>
                 </h3>
+                <p className="text-xs font-normal text-light mt-1">
+                  up to 3 user + 1.99 per user
+                </p>
               </div>
-              <div className="">
-                <button className="border-solid border-main border rounded-sm py-3 px-5 bg-main">
+              <div className="w-full">
+                <button className="w-full border-solid border-main border rounded-sm py-3 px-5 bg-main text-white hover:bg-opacity-90 transition duration-200">
                   Get this
                 </button>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Diamond Plan */}
         <div
           style={{ boxShadow: "0 0 50px 0 rgba(0,0,0,0.04)" }}
-          className="flex flex-col gap-10  bg-gray-100 rounded-xl  items-start p-4"
+          className="flex flex-col gap-6 md:gap-8 lg:gap-10 bg-gray-100 rounded-xl items-start p-6 md:p-8 w-full max-w-sm lg:max-w-xs xl:max-w-sm"
         >
-          <div className="">
+          <div className="flex items-center justify-center w-12 h-12">
             <svg
               width="24"
               height="24"
@@ -205,13 +221,15 @@ const grid = () => {
               />
             </svg>
           </div>
-          <div className="flex flex-col gap-7 items-start">
-            <div className="">
-              <h3 className="font-semibold text-3xl text-dark">Diamond Plan</h3>
+          <div className="flex flex-col gap-6 md:gap-7 items-start w-full">
+            <div>
+              <h3 className="font-semibold text-2xl md:text-3xl text-dark">
+                Diamond Plan
+              </h3>
             </div>
-            <div className="">
-              <ul>
-                <li className="flex items-center gap-5 font-normal text-lg text-dark">
+            <div className="w-full">
+              <ul className="space-y-3 md:space-y-4">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -223,10 +241,10 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Store unlimited data
                 </li>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -238,10 +256,10 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Export to pdf, xls, csv
                 </li>
-                <li className="flex items-center gap-3 font-normal text-lg text-dark">
+                <li className="flex items-center gap-3 font-normal text-base md:text-lg text-dark">
                   <svg
                     width="18"
                     height="14"
@@ -253,24 +271,25 @@ const grid = () => {
                       d="M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z"
                       fill="#BDBDBD"
                     />
-                  </svg>{" "}
+                  </svg>
                   Cloud server support
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="">
-                <h3 className="font-semibold text-2xl text-dark">
+            <div className="flex flex-col gap-4 w-full">
+              <div>
+                <h3 className="font-semibold text-xl md:text-2xl text-dark">
                   $29.99/
-                  <span className="font-light text-xl text-light">year</span>
-                  <p className="text-xs font-normal text-light">
-                    {" "}
-                    up to 3 user + 1.99 per user
-                  </p>
+                  <span className="font-light text-lg md:text-xl text-light">
+                    year
+                  </span>
                 </h3>
+                <p className="text-xs font-normal text-light mt-1">
+                  up to 3 user + 1.99 per user
+                </p>
               </div>
-              <div className="">
-                <button className="border-solid border-main border rounded-sm py-3 px-5">
+              <div className="w-full">
+                <button className="w-full border-solid border-main border rounded-sm py-3 px-5 hover:bg-main hover:text-white transition duration-200">
                   Get this
                 </button>
               </div>
@@ -282,4 +301,4 @@ const grid = () => {
   );
 };
 
-export default grid;
+export default Grid;

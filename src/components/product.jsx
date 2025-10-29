@@ -1,22 +1,24 @@
 import React from "react";
 
-const product = () => {
+const Product = () => {
   return (
-    <section className="container1 py-[100px]">
-      <div className="grid grid-cols-2">
-        <div className="">
-          <h1 className="font-bold text-[70px]">The Product we work with.</h1>
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-[100px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="text-center lg:text-left">
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[70px] leading-tight">
+            The Product we work with.
+          </h1>
         </div>
         <div className="flex items-center">
-          <p className="font-normal text-2xl text-light">
+          <p className="font-normal text-lg sm:text-xl lg:text-2xl text-light text-center lg:text-left">
             Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
             aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3 flex items-center py-[100px]">
-        <div className="flex items-center flex-col gap-6">
-          <div className="">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 py-12 md:py-16 lg:py-[100px]">
+        <div className="flex flex-col items-center text-center gap-6 p-6 rounded-lg hover:bg-gray-50 transition duration-200">
+          <div className="flex items-center justify-center w-12 h-12">
             <svg
               width="24"
               height="24"
@@ -31,14 +33,16 @@ const product = () => {
             </svg>
           </div>
           <div className="flex flex-col items-center">
-            <h1 className="font-medium text-3xl text-dark">Cross platform</h1>
-            <p className="font-normal text-sm text-light pt-2">
+            <h1 className="font-medium text-xl sm:text-2xl lg:text-3xl text-dark mb-2">
+              Cross platform
+            </h1>
+            <p className="font-normal text-sm sm:text-base text-light">
               Elit esse cillum dolore eu fugiat nulla pariatur
             </p>
           </div>
         </div>
-        <div className="flex items-center flex-col gap-6">
-          <div className="">
+        <div className="flex flex-col items-center text-center gap-6 p-6 rounded-lg hover:bg-gray-50 transition duration-200">
+          <div className="flex items-center justify-center w-12 h-12">
             <svg
               width="24"
               height="24"
@@ -53,14 +57,17 @@ const product = () => {
             </svg>
           </div>
           <div className="flex flex-col items-center">
-            <h1 className="font-medium text-3xl text-dark">Cloud server</h1>
-            <p className="font-normal text-sm text-light pt-2">
+            <h1 className="font-medium text-xl sm:text-2xl lg:text-3xl text-dark mb-2">
+              Cloud server
+            </h1>
+            <p className="font-normal text-sm sm:text-base text-light">
               Elit esse cillum dolore eu fugiat nulla pariatur
             </p>
           </div>
         </div>
-        <div className="flex items-center flex-col gap-6">
-          <div className="size-12 bg-gray-300 rounded-[50%] flex items-center justify-center">
+
+        <div className="flex flex-col items-center text-center gap-6 p-6 rounded-lg hover:bg-gray-50 transition duration-200">
+          <div className="size-12 bg-gray-100 rounded-[50%] flex items-center justify-center">
             <svg
               width="24"
               height="24"
@@ -75,8 +82,10 @@ const product = () => {
             </svg>
           </div>
           <div className="flex flex-col items-center">
-            <h1 className="font-medium text-3xl text-dark">Cross platform</h1>
-            <p className="font-normal text-sm text-light pt-1">
+            <h1 className="font-medium text-xl sm:text-2xl lg:text-3xl text-dark mb-2">
+              Secure Payments
+            </h1>
+            <p className="font-normal text-sm sm:text-base text-light">
               Elit esse cillum dolore eu fugiat nulla pariatur
             </p>
           </div>
@@ -86,4 +95,4 @@ const product = () => {
   );
 };
 
-export default product;
+export default Product;
