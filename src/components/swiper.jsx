@@ -6,7 +6,7 @@ import img from "../assets/svg/avatar.svg";
 
 const ResponsiveSwiper = () => {
   return (
-    <div className="container1">
+    <div className="container1 py-[100px]">
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}

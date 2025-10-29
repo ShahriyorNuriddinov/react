@@ -7,6 +7,7 @@ import Online from "./components/online";
 import Product from "./components/product";
 import Grid from "./components/grid";
 import Swiper from "./components/swiper";
+import Banner from "./components/banner";
 const App = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const App = () => {
       <Product />
       <Grid />
       <Swiper />
+      <Banner />
     </div>
   );
 };
