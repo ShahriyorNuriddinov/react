@@ -8,6 +8,7 @@ import Product from "./components/product";
 import Grid from "./components/grid";
 import Swiper from "./components/swiper";
 import Banner from "./components/banner";
+import Footer from "./components/footer";
 const App = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const App = () => {
       <Grid />
       <Swiper />
       <Banner />
+      <Footer />
     </div>
   );
 };
